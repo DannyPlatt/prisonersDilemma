@@ -12,10 +12,10 @@ int eval(int player1, int player2, int choice1, int choice2) {
 
   switch (total) {
 
-  case 0:
+  case 2:
     player1 += 3;
     player2 += 3;
-    printf("Neither player defected.\n5 points awarded to both\n");
+    printf("Neither player defected.\n3 points awarded to both\n");
     break;
   case 1:
     if (choice1) {
@@ -26,7 +26,7 @@ int eval(int player1, int player2, int choice1, int choice2) {
       printf("Player1 defected\n5 points awarded to Player1\n");
     }
     break;
-  case 2:
+  case 0:
     player1 += 1;
     player2 += 1;
     printf("both players defected\n1 points awarded to both\n");
